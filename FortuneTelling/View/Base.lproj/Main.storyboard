@@ -85,6 +85,9 @@
                                 <state key="normal" title="ログイン">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="login:" destination="Z12-fB-efj" eventType="touchUpInside" id="28R-nd-RZh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -92,6 +95,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="n4W-AJ-zdL"/>
                     <connections>
+                        <outlet property="emailTextField" destination="EOw-TN-Y38" id="i33-2u-kdU"/>
+                        <outlet property="passwordTextField" destination="ACC-wz-daJ" id="s4y-To-Deo"/>
                         <segue destination="teT-EJ-K7a" kind="show" identifier="first" id="6ta-6K-Jdl"/>
                     </connections>
                 </viewController>
@@ -149,6 +154,9 @@
                                 <state key="normal" title="新規登録">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="register:" destination="tOY-Lm-lum" eventType="touchUpInside" id="vHJ-Qn-Mvo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -156,6 +164,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="hEc-hx-V7P"/>
                     <connections>
+                        <outlet property="emailTextField" destination="UlZ-bI-Tai" id="QaN-d9-NPJ"/>
+                        <outlet property="passwordTextField" destination="jGI-Hg-YVe" id="ncz-oj-H6i"/>
                         <segue destination="teT-EJ-K7a" kind="show" identifier="first" id="iUT-De-WuW"/>
                     </connections>
                 </viewController>
