@@ -13,6 +13,7 @@
 		10FE2ED524590FE400AC80BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FE2ED324590FE400AC80BF /* Main.storyboard */; };
 		10FE2ED724590FE600AC80BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10FE2ED624590FE600AC80BF /* Assets.xcassets */; };
 		10FE2EDA24590FE600AC80BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FE2ED824590FE600AC80BF /* LaunchScreen.storyboard */; };
+		39876D0E83B93AF27AC549EB /* Pods_FortuneTelling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FE9808D8AC83937929D743 /* Pods_FortuneTelling.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		10FE2ED624590FE600AC80BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10FE2ED924590FE600AC80BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10FE2EDB24590FE600AC80BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13FE9808D8AC83937929D743 /* Pods_FortuneTelling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortuneTelling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C289909581F66A5F7687AD6 /* Pods-FortuneTelling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortuneTelling.debug.xcconfig"; path = "Target Support Files/Pods-FortuneTelling/Pods-FortuneTelling.debug.xcconfig"; sourceTree = "<group>"; };
+		9358818C6EF3BEDEBF3A8A28 /* Pods-FortuneTelling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortuneTelling.release.xcconfig"; path = "Target Support Files/Pods-FortuneTelling/Pods-FortuneTelling.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39876D0E83B93AF27AC549EB /* Pods_FortuneTelling.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				10FE2ECC24590FE400AC80BF /* FortuneTelling */,
 				10FE2ECB24590FE400AC80BF /* Products */,
+				9CDC163B178590218654D3EF /* Pods */,
+				32CA08D007291DDDBC586934 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +98,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		32CA08D007291DDDBC586934 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13FE9808D8AC83937929D743 /* Pods_FortuneTelling.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CDC163B178590218654D3EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C289909581F66A5F7687AD6 /* Pods-FortuneTelling.debug.xcconfig */,
+				9358818C6EF3BEDEBF3A8A28 /* Pods-FortuneTelling.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10FE2EDE24590FE600AC80BF /* Build configuration list for PBXNativeTarget "FortuneTelling" */;
 			buildPhases = (
+				1EDB4BD0135EADCABE1D7EE2 /* [CP] Check Pods Manifest.lock */,
 				10FE2EC624590FE400AC80BF /* Sources */,
 				10FE2EC724590FE400AC80BF /* Frameworks */,
 				10FE2EC824590FE400AC80BF /* Resources */,
+				B22B857645BB40338EE65058 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,6 +183,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EDB4BD0135EADCABE1D7EE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FortuneTelling-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B22B857645BB40338EE65058 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FortuneTelling/Pods-FortuneTelling-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FortuneTelling/Pods-FortuneTelling-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FortuneTelling/Pods-FortuneTelling-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		10FE2EC624590FE400AC80BF /* Sources */ = {
@@ -306,6 +375,7 @@
 		};
 		10FE2EDF24590FE600AC80BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C289909581F66A5F7687AD6 /* Pods-FortuneTelling.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -323,6 +393,7 @@
 		};
 		10FE2EE024590FE600AC80BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9358818C6EF3BEDEBF3A8A28 /* Pods-FortuneTelling.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
