@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10747EC42459137F00433C25 /* FirstQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10747EC32459137F00433C25 /* FirstQuestionController.swift */; };
+		10747EC62459139700433C25 /* SecondQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10747EC52459139700433C25 /* SecondQuestionController.swift */; };
+		10747EC8245913B600433C25 /* ThirdQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10747EC7245913B600433C25 /* ThirdQuestionController.swift */; };
+		10747ECA245913CF00433C25 /* FourthQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10747EC9245913CF00433C25 /* FourthQuestionController.swift */; };
+		10747ECC245913E800433C25 /* FifthQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10747ECB245913E800433C25 /* FifthQuestionController.swift */; };
+		10747ECE245913FE00433C25 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10747ECD245913FE00433C25 /* LoginController.swift */; };
+		10747ED02459141B00433C25 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10747ECF2459141B00433C25 /* RegisterController.swift */; };
 		10FE2ECE24590FE400AC80BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FE2ECD24590FE400AC80BF /* AppDelegate.swift */; };
 		10FE2ED024590FE400AC80BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FE2ECF24590FE400AC80BF /* SceneDelegate.swift */; };
 		10FE2ED224590FE400AC80BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FE2ED124590FE400AC80BF /* ViewController.swift */; };
@@ -17,6 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10747EC32459137F00433C25 /* FirstQuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstQuestionController.swift; sourceTree = "<group>"; };
+		10747EC52459139700433C25 /* SecondQuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondQuestionController.swift; sourceTree = "<group>"; };
+		10747EC7245913B600433C25 /* ThirdQuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdQuestionController.swift; sourceTree = "<group>"; };
+		10747EC9245913CF00433C25 /* FourthQuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthQuestionController.swift; sourceTree = "<group>"; };
+		10747ECB245913E800433C25 /* FifthQuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthQuestionController.swift; sourceTree = "<group>"; };
+		10747ECD245913FE00433C25 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		10747ECF2459141B00433C25 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		10FE2ECA24590FE400AC80BF /* FortuneTelling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortuneTelling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10FE2ECD24590FE400AC80BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10FE2ECF24590FE400AC80BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +91,13 @@
 				10FE2ECD24590FE400AC80BF /* AppDelegate.swift */,
 				10FE2ECF24590FE400AC80BF /* SceneDelegate.swift */,
 				10FE2ED124590FE400AC80BF /* ViewController.swift */,
+				10747ECF2459141B00433C25 /* RegisterController.swift */,
+				10747ECD245913FE00433C25 /* LoginController.swift */,
+				10747EC32459137F00433C25 /* FirstQuestionController.swift */,
+				10747EC52459139700433C25 /* SecondQuestionController.swift */,
+				10747EC7245913B600433C25 /* ThirdQuestionController.swift */,
+				10747EC9245913CF00433C25 /* FourthQuestionController.swift */,
+				10747ECB245913E800433C25 /* FifthQuestionController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -112,7 +133,6 @@
 				5C289909581F66A5F7687AD6 /* Pods-FortuneTelling.debug.xcconfig */,
 				9358818C6EF3BEDEBF3A8A28 /* Pods-FortuneTelling.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -231,7 +251,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10747ED02459141B00433C25 /* RegisterController.swift in Sources */,
+				10747EC42459137F00433C25 /* FirstQuestionController.swift in Sources */,
+				10747EC8245913B600433C25 /* ThirdQuestionController.swift in Sources */,
+				10747ECA245913CF00433C25 /* FourthQuestionController.swift in Sources */,
+				10747EC62459139700433C25 /* SecondQuestionController.swift in Sources */,
+				10747ECE245913FE00433C25 /* LoginController.swift in Sources */,
 				10FE2ED224590FE400AC80BF /* ViewController.swift in Sources */,
+				10747ECC245913E800433C25 /* FifthQuestionController.swift in Sources */,
 				10FE2ECE24590FE400AC80BF /* AppDelegate.swift in Sources */,
 				10FE2ED024590FE400AC80BF /* SceneDelegate.swift in Sources */,
 			);
