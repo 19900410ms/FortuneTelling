@@ -36,6 +36,9 @@ class FifthQuestionController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        let nextVC = segue.destination as! ResultController
+        
+        nextVC.resultCount = fifthCount
     }
     
     /*
