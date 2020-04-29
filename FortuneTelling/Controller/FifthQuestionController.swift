@@ -1,14 +1,43 @@
 import UIKit
 
 class FifthQuestionController: UIViewController {
-
+    
+    @IBOutlet weak var questionLabel: UILabel!
+    
+    var fifthCount = Int()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        questionLabel.layer.cornerRadius = 15.0
     }
     
-
+    @IBAction func nextQuestion(_ sender: Any) {
+        
+        if (sender as AnyObject).tag == 1 {
+            
+            fifthCount = fifthCount + 20
+            
+        } else if (sender as AnyObject).tag == 2 {
+            
+            fifthCount = fifthCount + 15
+            
+        } else if (sender as AnyObject).tag == 3 {
+            
+            fifthCount = fifthCount + 10
+            
+        } else if (sender as AnyObject).tag == 4 {
+            
+            fifthCount = fifthCount + 5
+        }
+        
+        print(fifthCount)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 

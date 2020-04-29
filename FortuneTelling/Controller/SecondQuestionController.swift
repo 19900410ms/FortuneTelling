@@ -2,13 +2,48 @@ import UIKit
 
 class SecondQuestionController: UIViewController {
 
+    @IBOutlet weak var questionLabel: UILabel!
+    
+    var secondCount = Int()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        questionLabel.layer.cornerRadius = 15.0
     }
     
-
+    @IBAction func nextQuestion(_ sender: Any) {
+        
+        if (sender as AnyObject).tag == 1 {
+            
+            secondCount = secondCount + 5
+            
+        } else if (sender as AnyObject).tag == 2 {
+            
+            secondCount = secondCount + 10
+            
+        } else if (sender as AnyObject).tag == 3 {
+            
+            secondCount = secondCount + 15
+            
+        } else if (sender as AnyObject).tag == 4 {
+            
+            secondCount = secondCount + 20
+        }
+        
+        print(secondCount)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+       if segue.identifier == "third" {
+            
+            let nextVC = segue.destination as! ThirdQuestionController
+            
+            nextVC.thirdCount = secondCount
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
