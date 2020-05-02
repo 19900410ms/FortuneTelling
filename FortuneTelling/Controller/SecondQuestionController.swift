@@ -9,7 +9,13 @@ class SecondQuestionController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        questionLabel.layer.cornerRadius = 15.0
+        // questionLabel.layer.cornerRadius = 15.0
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.isNavigationBarHidden = true
     }
     
     @IBAction func nextQuestion(_ sender: Any) {
@@ -32,6 +38,8 @@ class SecondQuestionController: UIViewController {
         }
         
         print(secondCount)
+        
+        self.performSegue(withIdentifier: "third", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

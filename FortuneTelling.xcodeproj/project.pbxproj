@@ -15,6 +15,7 @@
 		10747ECE245913FE00433C25 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10747ECD245913FE00433C25 /* LoginController.swift */; };
 		10747ED02459141B00433C25 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10747ECF2459141B00433C25 /* RegisterController.swift */; };
 		1081DC1F2459684800B0C8EE /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081DC1E2459684800B0C8EE /* ResultController.swift */; };
+		10B0643C245D3B5300CC0AEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10B0643B245D3B5300CC0AEB /* GoogleService-Info.plist */; };
 		10FE2ECE24590FE400AC80BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FE2ECD24590FE400AC80BF /* AppDelegate.swift */; };
 		10FE2ED024590FE400AC80BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FE2ECF24590FE400AC80BF /* SceneDelegate.swift */; };
 		10FE2ED224590FE400AC80BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FE2ED124590FE400AC80BF /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 		10747ECD245913FE00433C25 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		10747ECF2459141B00433C25 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		1081DC1E2459684800B0C8EE /* ResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
+		10B0643B245D3B5300CC0AEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		10FE2ECA24590FE400AC80BF /* FortuneTelling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortuneTelling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10FE2ECD24590FE400AC80BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10FE2ECF24590FE400AC80BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				10FE2EE22459103400AC80BF /* View */,
 				10FE2EE12459102C00AC80BF /* Controller */,
 				10FE2EDB24590FE600AC80BF /* Info.plist */,
+				10B0643B245D3B5300CC0AEB /* GoogleService-Info.plist */,
 			);
 			path = FortuneTelling;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10FE2EDA24590FE600AC80BF /* LaunchScreen.storyboard in Resources */,
+				10B0643C245D3B5300CC0AEB /* GoogleService-Info.plist in Resources */,
 				10FE2ED724590FE600AC80BF /* Assets.xcassets in Resources */,
 				10FE2ED524590FE400AC80BF /* Main.storyboard in Resources */,
 			);

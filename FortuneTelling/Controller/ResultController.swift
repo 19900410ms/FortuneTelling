@@ -9,13 +9,14 @@ class ResultController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var resultLabel: UILabel!
-    @IBOutlet weak var resultDetailField: UITextView!
+    @IBOutlet weak var resultDetailField: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        resultLabel.layer.cornerRadius = 15.0
-        resultDetailField.layer.cornerRadius = 5.0
+        // resultLabel.layer.cornerRadius = 15.0
+        // resultDetailField.layer.cornerRadius = 5.0
         
         resultPublish()
     }
@@ -71,7 +72,9 @@ class ResultController: UIViewController {
         
         imageView.contentMode = .scaleAspectFill
         
-        self.view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
+        
+        resultDetailField.adjustsFontSizeToFitWidth = true
     }
     
     @IBAction func share(_ sender: Any) {
