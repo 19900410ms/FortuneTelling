@@ -4,6 +4,8 @@ class ResultController: UIViewController {
 
     var resultCount = Int()
     
+    var imageScreenShot = UIImage()
+    
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var resultLabel: UILabel!
@@ -72,7 +74,32 @@ class ResultController: UIViewController {
         self.view.addSubview(imageView)
     }
     
+    @IBAction func share(_ sender: Any) {
+        
+        screenShot()
+        
+        let items = [imageScreenShot] as [Any]
+        // activity viewに載せて、share
+        let activityVC = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        
+        present(activityVC, animated: true, completion: nil)
+    }
     
+    // スクリーンショット
+    func screenShot() {
+        // スクリーンサイズ指定
+        let width = CGFloat(UIScreen.main.bounds.size.width)
+        let height = CGFloat(UIScreen.main.bounds.size.height)
+        let size = CGSize(width: width, height: height)
+        // コンテキスト開始
+        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        // Viewの読み込み
+        self.view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
+        // 変数にコンテキストの内容を代入
+        imageScreenShot = UIGraphicsGetImageFromCurrentImageContext()!
+        // コンテキスト終了
+        UIGraphicsEndImageContext()
+    }
     /*
     // MARK: - Navigation
 

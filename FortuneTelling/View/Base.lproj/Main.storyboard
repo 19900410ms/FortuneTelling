@@ -601,6 +601,9 @@
                                 <rect key="frame" x="143" y="711" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="register"/>
+                                <connections>
+                                    <action selector="share:" destination="DZU-pm-Qev" eventType="touchUpInside" id="eC4-92-9rb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
